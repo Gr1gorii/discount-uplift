@@ -1,0 +1,2 @@
+comparison,population,contact_cost,discount,profit,ci_low,ci_high
+top_30_minus_mail_all,10000,0.15,0.0,-65.59378088906641,-989.0049367401442,804.2896215671103

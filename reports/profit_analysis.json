@@ -1,0 +1,54 @@
+{
+  "currency": "USD",
+  "population": 10000,
+  "margin": 30.0,
+  "contact_cost": 0.15,
+  "discount": 0.0,
+  "propensity": 0.5,
+  "estimator": "Normalized IPW (Hajek) within the selected audience, relative to no mail",
+  "bootstrap": {
+    "resamples": 1000,
+    "seed": 42,
+    "method": "Paired IID test-row percentile bootstrap",
+    "fixed_model": true,
+    "fixed_policy_membership": true,
+    "model_training_uncertainty": false
+  },
+  "model_sha256": "d341f5ed5388a2df23063b89989262ba7d6cba732ff3ce67f21a47ca86aee5ad",
+  "model_code_sha256": "fdf68f31532911fda60630befcbd768418dcda785ee26e52014fba37f0bf7d91",
+  "chosen_model": "logistic",
+  "validation_share": 0.3,
+  "test_n": 8523,
+  "test_buyers": 78,
+  "top_30_minus_mail_all": {
+    "profit": -65.59378088906641,
+    "ci": [
+      -989.0049367401442,
+      804.2896215671103
+    ]
+  },
+  "no_discount_mail_all_cost_limit": 0.1482406431455906,
+  "mail_all_discount_limit_at_zero_cost": 0.15286794315982047,
+  "mail_all_discount_limit_at_005_cost": 0.11386975704372944,
+  "default_grid_cell": {
+    "contact_cost": 0.15,
+    "discount": 0.0,
+    "optimal_k": 40.0,
+    "profit": 482.33776430481953,
+    "mail_all_profit": 471.7812103291658,
+    "gain_vs_mail_all": 10.556553975653742
+  },
+  "negative_deciles": [
+    5,
+    6
+  ],
+  "negative_deciles_excluding_zero": [],
+  "calibration_bootstrap": {
+    "resamples": 1000,
+    "seed": 42,
+    "method": "IID test-row percentile bootstrap with fixed deciles",
+    "pointwise": true,
+    "model_training_uncertainty": false
+  },
+  "selection_note": "Sensitivity maxima and decision thresholds use test outcomes. They are exploratory and need a new experiment."
+}

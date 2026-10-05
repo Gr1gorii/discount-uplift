@@ -1,0 +1,207 @@
+{
+  "source": "https://hillstorm1.s3.us-east-2.amazonaws.com/hillstorm_no_indices.csv.gz",
+  "source_sha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f",
+  "python": "3.12.14",
+  "seed": 42,
+  "raw_n": 64000,
+  "experiment_n": 42613,
+  "missing_cells": 0,
+  "identical_rows": 6562,
+  "max_absolute_smd": 0.01365900039927897,
+  "ab": {
+    "treated_n": 21307,
+    "control_n": 21306,
+    "treated_orders": 267,
+    "control_orders": 122,
+    "treated_rate": 0.01253109306800582,
+    "control_rate": 0.005726086548390125,
+    "effect": 0.006805006519615695,
+    "ci_low": 0.005000171380452313,
+    "ci_high": 0.008609841658779076,
+    "p_value": 1.469291797925834e-13,
+    "srm_p_value": 0.9961348415003554
+  },
+  "splits": {
+    "train": {
+      "n": 25567,
+      "orders": 233,
+      "treated_n": 12784
+    },
+    "validation": {
+      "n": 8523,
+      "orders": 78,
+      "treated_n": 4262
+    },
+    "test": {
+      "n": 8523,
+      "orders": 78,
+      "treated_n": 4261
+    }
+  },
+  "chosen_model": "logistic",
+  "selected_share": 0.3,
+  "validation_metrics": {
+    "logistic": {
+      "qini": 0.09461933466026083,
+      "uplift_at_30": 0.015444895318748531
+    },
+    "forest": {
+      "qini": 0.06314102555449905,
+      "uplift_at_30": 0.008591897423777754
+    }
+  },
+  "test_metrics": {
+    "logistic": {
+      "qini": -0.030077161579435904,
+      "uplift_at_30": 0.009514782813142891
+    },
+    "forest": {
+      "qini": -0.050856624876687274,
+      "uplift_at_30": 0.0060887199482728225
+    },
+    "response": {
+      "qini": 0.04982577938681673,
+      "uplift_at_30": 0.008902040806327945
+    }
+  },
+  "economics": {
+    "population": 10000,
+    "margin": 30.0,
+    "contact_cost": 0.15,
+    "discount": 0.0,
+    "bootstraps": 1000,
+    "currency": "USD"
+  },
+  "policies": {
+    "none": {
+      "share": 0.0,
+      "contacts": 0.0,
+      "treated_n": 0,
+      "control_n": 0,
+      "treated_rate": 0.0,
+      "control_rate": 0.0,
+      "uplift": 0.0,
+      "extra_orders": 0.0,
+      "treated_orders": 0.0,
+      "contact_spend": 0.0,
+      "discount_spend": 0.0,
+      "profit": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "all": {
+      "share": 1.0,
+      "contacts": 10000.0,
+      "treated_n": 4261,
+      "control_n": 4262,
+      "treated_rate": 0.012438394743018071,
+      "control_rate": 0.005865790708587518,
+      "uplift": 0.006572604034430553,
+      "extra_orders": 65.72604034430553,
+      "treated_orders": 124.38394743018071,
+      "contact_spend": 1500.0,
+      "discount_spend": 0.0,
+      "profit": 471.781210329166,
+      "ci": [
+        -725.0726058515729,
+        1668.65195897311
+      ]
+    },
+    "response_30": {
+      "share": 0.29989440337909185,
+      "contacts": 2998.9440337909186,
+      "treated_n": 1298,
+      "control_n": 1258,
+      "treated_rate": 0.020030816640986132,
+      "control_rate": 0.011128775834658187,
+      "uplift": 0.008902040806327945,
+      "extra_orders": 26.69672216470049,
+      "treated_orders": 60.07129805744521,
+      "contact_spend": 449.84160506863776,
+      "discount_spend": 0.0,
+      "profit": 351.06005987237694,
+      "ci": [
+        -479.2865805016294,
+        1158.8231743348294
+      ]
+    },
+    "uplift_30": {
+      "share": 0.29989440337909185,
+      "contacts": 2998.9440337909186,
+      "treated_n": 1272,
+      "control_n": 1284,
+      "treated_rate": 0.018081761006289308,
+      "control_rate": 0.008566978193146417,
+      "uplift": 0.009514782813142891,
+      "extra_orders": 28.534301150291245,
+      "treated_orders": 54.2261892902446,
+      "contact_spend": 449.84160506863776,
+      "discount_spend": 0.0,
+      "profit": 406.1874294400996,
+      "ci": [
+        -340.11930940913516,
+        1245.0620075950194
+      ]
+    },
+    "selected": {
+      "share": 0.29989440337909185,
+      "contacts": 2998.9440337909186,
+      "treated_n": 1272,
+      "control_n": 1284,
+      "treated_rate": 0.018081761006289308,
+      "control_rate": 0.008566978193146417,
+      "uplift": 0.009514782813142891,
+      "extra_orders": 28.534301150291245,
+      "treated_orders": 54.2261892902446,
+      "contact_spend": 449.84160506863776,
+      "discount_spend": 0.0,
+      "profit": 406.1874294400996,
+      "ci": [
+        -340.11930940913516,
+        1245.0620075950194
+      ]
+    },
+    "random_30": {
+      "share": 0.29989440337909185,
+      "contacts": 2998.9440337909186,
+      "extra_orders": 19.710871655525626,
+      "profit": 141.48454459713108,
+      "ci": [
+        -217.44521653838086,
+        500.41938368359365
+      ]
+    }
+  },
+  "differences": {
+    "uplift_30_vs_all": {
+      "profit": -65.59378088906641,
+      "ci": [
+        -1034.011905731184,
+        839.8553161255779
+      ]
+    },
+    "selected_vs_all": {
+      "profit": -65.59378088906641,
+      "ci": [
+        -1034.011905731184,
+        839.8553161255779
+      ]
+    },
+    "uplift_30_vs_response_30": {
+      "profit": 55.12736956772267,
+      "ci": [
+        -523.1815100968631,
+        640.5891879235638
+      ]
+    },
+    "uplift_30_vs_random_30": {
+      "profit": 264.7028848429685,
+      "ci": [
+        -351.9568730260642,
+        892.5636114070472
+      ]
+    }
+  }
+}
