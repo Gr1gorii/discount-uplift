@@ -2,6 +2,8 @@
 
 **English** | [Italiano](README.it.md)
 
+Live app: [Email campaign uplift](https://gr1gorii-discount-uplift.streamlit.app/)
+
 > **Key result:** Email lifts conversion by 0.68 pp, 95% CI [0.50; 0.86].  
 > At \$0.15/contact and 0% coupon, top-30% minus mail-all is -\$66 per 10,000, 95% CI [-\$989; \$804], indistinguishable from zero.  
 > My decision rule uses point estimates and needs a new randomized test before rollout.

@@ -2,6 +2,8 @@
 
 [English](README.md) | **Italiano**
 
+App online: [Email campaign uplift](https://gr1gorii-discount-uplift.streamlit.app/)
+
 > **Risultato principale:** L'email aumenta la conversione di 0,68 p.p., IC 95% [0,50; 0,86].  
 > Con \$0,15/contatto e coupon 0%, top-30% meno tutti è -\$66 per 10.000, IC 95% [-\$989; \$804], indistinguibile da zero.  
 > La mia regola usa stime puntuali e richiede un nuovo test randomizzato prima dell'adozione.
